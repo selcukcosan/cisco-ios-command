@@ -57,3 +57,9 @@ pip install ansible-pylibssh
 
 ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -vvvv --vault-password-file vault_pass.yaml -i inventory-vault.yaml cisco-ios-command.yml --extra-vars="ios_device=r4"
 ```
+**_NOTE:_**  `output` folder must be created before running the script.
+
+## Files
+- cisco-ios-command.yml >> Ansible script file
+- vault_pass.yaml >> Inventory vault password information
+- inventory-vault.yaml >> Inventory vault file encrypted by "Inventory vault password"

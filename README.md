@@ -66,3 +66,7 @@ ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -vvvv --vault-password-file vau
 
 ## Variables
 - `ios_device` variable shows which Cisco ASA device/devices will be connected.The value can be "r4", "r1" etc. or "all_cisco_ios" as per the example inventory file above.
+
+## output Folder Example Files
+- r4-2024-06-21-22-00-45.facts
+- r4-2024-06-21-22-00-45.txt

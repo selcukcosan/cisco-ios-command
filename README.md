@@ -45,3 +45,15 @@ all:
           inventory_user: admin
           inventory_pass: password
 ```
+
+## Prerequisite
+Ansible ansible-pylibssh modules must be installed before running the script.
+```bash
+pip install ansible-pylibssh
+```
+
+## Usage:
+```bash
+
+ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -vvvv --vault-password-file vault_pass.yaml -i inventory-vault.yaml cisco-ios-command.yml --extra-vars="ios_device=r4"
+```

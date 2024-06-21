@@ -1,6 +1,7 @@
 # cisco-ios-command
 
 This Ansible script runs commands on remote Cisco IOS XE device and retrieve the result into output folder. The script gathers the IOS Facts Information.
+In the example script the command is "show running-config" to get baackup. But thos can be any command ie "show tech-support"
 
 ```yml
 ---

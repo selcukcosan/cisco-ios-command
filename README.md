@@ -8,7 +8,7 @@ all:
   children:
     all_cisco_ios:
       hosts:
-        r4.xpnetworks.local:
+        r4:
           inventory_network_os: cisco.ios.ios
           inventory_host: 192.168.1.14
           inventory_port: 22
@@ -63,3 +63,6 @@ ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -vvvv --vault-password-file vau
 - cisco-ios-command.yml >> Ansible script file
 - vault_pass.yaml >> Inventory vault password information
 - inventory-vault.yaml >> Inventory vault file encrypted by "Inventory vault password"
+
+## Variables
+- `ios_device` variable shows which Cisco ASA device/devices will be connected.The value can be "r4", "r1" etc. or "all_cisco_ios" as per the example inventory file above.
